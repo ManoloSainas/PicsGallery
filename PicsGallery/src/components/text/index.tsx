@@ -1,8 +1,12 @@
 import { PropsWithChildren } from 'react'
 import { StyledText } from './styled'
 
-type Props = PropsWithChildren
+type TextType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span'
 
-export const Text = ({ children }: Props) => {
-  return <StyledText>{children}</StyledText>
+type Props = PropsWithChildren<{
+  as?: TextType
+}>
+
+export const Text = ({ as = 'h1', children }: Props) => {
+  return <StyledText as={as}>{children}</StyledText>
 }

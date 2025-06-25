@@ -7,6 +7,7 @@ type Props = PropsWithChildren<{
   alignItems?: string
   height?: string
   width?: string
+  flexDirection?: string
 }>
 
 export const Stack = ({
@@ -15,6 +16,7 @@ export const Stack = ({
   alignItems,
   height,
   width,
+  flexDirection,
   children
 }: Props) => {
   return (
@@ -24,6 +26,7 @@ export const Stack = ({
       $alignItems={alignItems}
       $height={height}
       $width={width}
+      $flexDirection={flexDirection}
     >
       {children}
     </StyledStack>
