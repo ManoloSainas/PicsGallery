@@ -11,12 +11,12 @@ type Props = PropsWithChildren<{
 }>
 
 export const Stack = ({
-  display = 'flex',
-  justifyContent,
-  alignItems,
-  height,
+  display,
+  justifyContent = 'start',
+  alignItems = 'start',
+  height = 'max-content',
   width,
-  flexDirection,
+  flexDirection = 'row',
   children
 }: Props) => {
   return (
