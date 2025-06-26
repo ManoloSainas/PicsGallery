@@ -5,9 +5,9 @@ import { Text } from './components/text'
 
 function App() {
   return (
-    <Stack flexDirection="column">
+    <Stack flexDirection="column" alignItems="center">
       <Text>Benvenuto nella tua galleria di immagini!</Text>
-      <Button>Ciao!</Button>
+      <Button onClick={() => console.log('Tasto premuto')}>Ciao!</Button>
     </Stack>
   )
 }
