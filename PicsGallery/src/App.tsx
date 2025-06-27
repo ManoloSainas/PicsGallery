@@ -1,7 +1,7 @@
 import './App.css'
-import { Button } from './components/button'
-import { Stack } from './components/stack'
-import { Text } from './components/text'
+import { Button } from './components/Button'
+import { Stack } from './components/Stack'
+import { Text } from './components/Text'
 
 function App() {
   return (
