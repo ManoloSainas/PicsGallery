@@ -7,6 +7,7 @@ export const StyledStack = styled.div<{
   $height?: string
   $width?: string
   $flexDirection?: string
+  $gap?: string
 }>`
   display: ${({ $display }) => $display || 'flex'};
   justify-content: ${({ $justifyContent }) => $justifyContent};
@@ -14,4 +15,5 @@ export const StyledStack = styled.div<{
   height: ${({ $height }) => $height};
   width: ${({ $width }) => $width};
   flex-direction: ${({ $flexDirection }) => $flexDirection};
+  gap: ${({ $gap }) => $gap};
 `

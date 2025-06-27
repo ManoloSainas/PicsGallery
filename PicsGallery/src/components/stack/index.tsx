@@ -8,6 +8,7 @@ type Props = PropsWithChildren<{
   height?: string
   width?: string
   flexDirection?: string
+  gap?: string
 }>
 
 export const Stack = ({
@@ -17,6 +18,7 @@ export const Stack = ({
   height = 'max-content',
   width,
   flexDirection = 'row',
+  gap,
   children
 }: Props) => {
   return (
@@ -27,6 +29,7 @@ export const Stack = ({
       $height={height}
       $width={width}
       $flexDirection={flexDirection}
+      $gap={gap}
     >
       {children}
     </StyledStack>
