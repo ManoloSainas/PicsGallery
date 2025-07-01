@@ -8,6 +8,7 @@ export const StyledStack = styled.div<{
   $width?: string
   $flexDirection?: string
   $gap?: string
+  $backgroundColor?: string
 }>`
   display: ${({ $display }) => $display || 'flex'};
   justify-content: ${({ $justifyContent }) => $justifyContent};
@@ -16,4 +17,5 @@ export const StyledStack = styled.div<{
   width: ${({ $width }) => $width};
   flex-direction: ${({ $flexDirection }) => $flexDirection};
   gap: ${({ $gap }) => $gap};
+  background-color: ${({ $backgroundColor }) => $backgroundColor};
 `
