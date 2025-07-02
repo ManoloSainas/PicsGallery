@@ -1,5 +1,6 @@
 import './App.css'
 import { Button } from './components/Button'
+import { Icon } from './components/Icon'
 import { Input } from './components/Input'
 import { Stack } from './components/Stack'
 import { Text } from './components/Text'
@@ -21,6 +22,7 @@ function App() {
         height="10rem"
         width="20rem"
       />
+      <Icon iconName={'Heart'} size="6x" color="red" />
     </Stack>
   )
 }
