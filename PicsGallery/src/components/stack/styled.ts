@@ -9,6 +9,10 @@ export const StyledStack = styled.div<{
   $flexDirection?: string
   $gap?: string
   $backgroundColor?: string
+  $padding?: string
+  $border?: string
+  $margin?: string
+  $borderRadius?: string
 }>`
   display: ${({ $display }) => $display || 'flex'};
   justify-content: ${({ $justifyContent }) => $justifyContent};
@@ -18,4 +22,8 @@ export const StyledStack = styled.div<{
   flex-direction: ${({ $flexDirection }) => $flexDirection};
   gap: ${({ $gap }) => $gap};
   background-color: ${({ $backgroundColor }) => $backgroundColor};
+  padding: ${({ $padding }) => $padding};
+  border: ${({ $border }) => $border};
+  margin: ${({ $margin }) => $margin};
+  border-radius: ${({ $borderRadius }) => $borderRadius};
 `

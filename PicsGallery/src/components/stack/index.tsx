@@ -10,6 +10,10 @@ type Props = PropsWithChildren<{
   flexDirection?: string
   gap?: string
   backgroundColor?: string
+  padding?: string
+  border?: string
+  margin?: string
+  borderRadius?: string
 }>
 
 export const Stack = ({
@@ -21,6 +25,10 @@ export const Stack = ({
   flexDirection = 'row',
   gap,
   backgroundColor,
+  padding,
+  border,
+  margin,
+  borderRadius,
   children
 }: Props) => {
   return (
@@ -33,6 +41,10 @@ export const Stack = ({
       $flexDirection={flexDirection}
       $gap={gap}
       $backgroundColor={backgroundColor}
+      $padding={padding}
+      $border={border}
+      $margin={margin}
+      $borderRadius={borderRadius}
     >
       {children}
     </StyledStack>

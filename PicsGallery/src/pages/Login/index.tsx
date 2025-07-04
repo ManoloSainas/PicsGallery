@@ -5,14 +5,9 @@ import { Text } from '../../components/Text'
 
 export const Login = () => {
   return (
-    <Stack flexDirection="column">
+    <Stack backgroundColor="#EEEEEE" flexDirection="column" alignItems="center">
       <Text>Login</Text>
-      <Stack
-        flexDirection="column"
-        justifyContent="center"
-        backgroundColor="#EEEEEE"
-        width="max-content"
-      >
+      <Stack flexDirection="column" justifyContent="center">
         <Text as="p">Email</Text>
         <Input onChange={(value) => console.log(value)} type="text" />
         <Text as="p">Password</Text>
