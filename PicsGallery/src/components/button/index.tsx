@@ -5,12 +5,16 @@ type Props = PropsWithChildren<{
   onClick: () => void
   disabled?: boolean
   backgroundColor?: string
+  fontSize?: string
+  borderRadius?: string
 }>
 
 export const Button = ({
   children,
   onClick,
   disabled = false,
+  fontSize,
+  borderRadius,
   backgroundColor
 }: Props) => {
   return (
@@ -18,6 +22,8 @@ export const Button = ({
       onClick={onClick}
       disabled={disabled}
       $backgroundColor={backgroundColor}
+      $fontSize={fontSize}
+      $borderRadius={borderRadius}
     >
       {children}
     </StyledButton>
