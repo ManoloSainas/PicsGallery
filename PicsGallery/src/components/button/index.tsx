@@ -7,6 +7,8 @@ type Props = PropsWithChildren<{
   backgroundColor?: string
   fontSize?: string
   borderRadius?: string
+  border?: string
+  width?: string
 }>
 
 export const Button = ({
@@ -15,7 +17,9 @@ export const Button = ({
   disabled = false,
   fontSize,
   borderRadius,
-  backgroundColor
+  backgroundColor,
+  border,
+  width
 }: Props) => {
   return (
     <StyledButton
@@ -24,6 +28,8 @@ export const Button = ({
       $backgroundColor={backgroundColor}
       $fontSize={fontSize}
       $borderRadius={borderRadius}
+      $border={border}
+      $width={width}
     >
       {children}
     </StyledButton>

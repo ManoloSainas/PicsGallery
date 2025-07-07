@@ -9,11 +9,36 @@ export const Login = () => {
       backgroundColor="#EEEEEE"
       flexDirection="column"
       alignItems="center"
-      padding="50px"
       borderRadius="30px"
+      width="20rem"
+      height="30rem"
     >
-      <Text>Login</Text>
-      <Stack flexDirection="column" justifyContent="center">
+      <Stack padding="3rem 0 1.5rem 0" width="100%">
+        <Stack width="50%">
+          <Button
+            onClick={() => console.log('clicked login')}
+            borderRadius="30px"
+            border="0 none gray"
+            fontSize="1.4rem"
+            width="100%"
+          >
+            Login
+          </Button>
+        </Stack>
+        <Stack width="50%">
+          <Button
+            onClick={() => console.log('clicked registrazione')}
+            borderRadius="30px"
+            border="0 none gray"
+            fontSize="1.4rem"
+            width="100%"
+          >
+            Registrazione
+          </Button>
+        </Stack>
+      </Stack>
+
+      <Stack flexDirection="column" justifyContent="center" height="100%">
         <Text as="p">Email</Text>
         <Input onChange={(value) => console.log(value)} type="text" />
         <Text as="p">Password</Text>
@@ -22,23 +47,16 @@ export const Login = () => {
           flexDirection="column"
           alignItems="center"
           width="100%"
-          padding="50px 0px 0px 0px"
-          gap="20px"
+          padding="4rem 0 0 0"
         >
           <Button
             onClick={() => console.log('clicked')}
-            backgroundColor="#0D70EE"
-            fontSize="25px"
+            backgroundColor="#83b9ff"
+            fontSize="1.8rem"
             borderRadius="20px"
+            border="0.1rem solid blue"
           >
             Accedi
-          </Button>
-          <Button
-            onClick={() => console.log('clicked')}
-            fontSize="15px"
-            borderRadius="20px"
-          >
-            Registrati
           </Button>
         </Stack>
       </Stack>
