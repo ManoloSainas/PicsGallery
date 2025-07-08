@@ -9,6 +9,7 @@ type Props = PropsWithChildren<{
   borderRadius?: string
   border?: string
   width?: string
+  color?: string
 }>
 
 export const Button = ({
@@ -19,7 +20,8 @@ export const Button = ({
   borderRadius,
   backgroundColor,
   border,
-  width
+  width,
+  color
 }: Props) => {
   return (
     <StyledButton
@@ -30,6 +32,7 @@ export const Button = ({
       $borderRadius={borderRadius}
       $border={border}
       $width={width}
+      $color={color}
     >
       {children}
     </StyledButton>

@@ -6,12 +6,14 @@ export const StyledButton = styled.button<{
   $borderRadius?: string
   $border?: string
   $width?: string
+  $color?: string
 }>`
   background-color: ${({ $backgroundColor }) => $backgroundColor};
   font-size: ${({ $fontSize }) => $fontSize};
   border-radius: ${({ $borderRadius }) => $borderRadius};
   border: ${({ $border }) => $border};
   width: ${({ $width }) => $width};
+  color: ${({ $color }) => $color};
   @media (max-width: 376px) {
   }
 `

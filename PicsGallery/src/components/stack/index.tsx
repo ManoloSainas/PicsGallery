@@ -14,6 +14,7 @@ type Props = PropsWithChildren<{
   border?: string
   margin?: string
   borderRadius?: string
+  minWidth?: string
 }>
 
 export const Stack = ({
@@ -29,6 +30,7 @@ export const Stack = ({
   border,
   margin,
   borderRadius,
+  minWidth,
   children
 }: Props) => {
   return (
@@ -45,6 +47,7 @@ export const Stack = ({
       $border={border}
       $margin={margin}
       $borderRadius={borderRadius}
+      $minWidth={minWidth}
     >
       {children}
     </StyledStack>

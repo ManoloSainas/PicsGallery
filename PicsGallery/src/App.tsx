@@ -1,12 +1,11 @@
 import './App.css'
 import { Stack } from './components/Stack'
-
-import { Login } from './pages/Login'
+import { AuthenticationPage } from './pages/AuthenticationPage'
 
 function App() {
   return (
     <Stack alignItems="center" justifyContent="center" height="100%">
-      <Login />
+      <AuthenticationPage />
     </Stack>
   )
 }
