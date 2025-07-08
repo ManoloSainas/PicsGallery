@@ -14,6 +14,8 @@ export const StyledStack = styled.div<{
   $margin?: string
   $borderRadius?: string
   $minWidth?: string
+  $maxWidth?: string
+  $minHeight?: string
 }>`
   display: ${({ $display }) => $display || 'flex'};
   justify-content: ${({ $justifyContent }) => $justifyContent};
@@ -28,4 +30,6 @@ export const StyledStack = styled.div<{
   margin: ${({ $margin }) => $margin};
   border-radius: ${({ $borderRadius }) => $borderRadius};
   min-width: ${({ $minWidth }) => $minWidth};
+  max-width: ${({ $maxWidth }) => $maxWidth};
+  min-height: ${({ $minHeight }) => $minHeight};
 `

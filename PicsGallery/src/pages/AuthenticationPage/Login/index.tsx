@@ -5,7 +5,7 @@ import { Text } from '../../../components/Text'
 
 export const Login = () => {
   return (
-    <Stack flexDirection="column" justifyContent="center" height="100%">
+    <Stack flexDirection="column">
       <Text as="p">Email</Text>
       <Input onChange={(value) => console.log(value)} type="text" />
       <Text as="p">Password</Text>
