@@ -7,8 +7,10 @@ export const StyledButton = styled.button<{
   $border?: string
   $width?: string
   $color?: string
+  active?: boolean
 }>`
-  background-color: ${({ $backgroundColor }) => $backgroundColor};
+  background-color: ${({ active, $backgroundColor }) =>
+    active !== undefined ? (active ? 'lightblue' : 'lightgray') : $backgroundColor};
   font-size: ${({ $fontSize }) => $fontSize};
   border-radius: ${({ $borderRadius }) => $borderRadius};
   border: ${({ $border }) => $border};

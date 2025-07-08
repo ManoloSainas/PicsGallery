@@ -26,6 +26,7 @@ export const AuthenticationPage = () => {
             fontSize="1.4rem"
             width="100%"
             backgroundColor="gray"
+            active={isLogin}
           >
             Login
           </Button>
@@ -38,6 +39,7 @@ export const AuthenticationPage = () => {
             fontSize="1.4rem"
             width="100%"
             backgroundColor="gray"
+            active={!isLogin}
           >
             Registrazione
           </Button>
