@@ -14,10 +14,10 @@ export const AuthenticationPage = () => {
       alignItems="center"
       borderRadius="30px"
       minWidth="20rem"
-      minHeight="35rem"
+      minHeight="max-content"
       border="0.2rem solid #8bfa85"
     >
-      <Stack padding="3rem 0 1.5rem 0" width="100%">
+      <Stack padding="3rem 0 0 0" width="100%">
         <Stack width="50%">
           <Button
             onClick={() => setIsLogin(true)}
@@ -45,7 +45,7 @@ export const AuthenticationPage = () => {
           </Button>
         </Stack>
       </Stack>
-      {isLogin ? <Login /> : <Registration />}
+      <Stack padding="2.5rem 0 1.5rem 0">{isLogin ? <Login /> : <Registration />}</Stack>
     </Stack>
   )
 }
