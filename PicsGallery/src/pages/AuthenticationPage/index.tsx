@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button } from '../../components/Button'
 import { Stack } from '../../components/Stack'
 import { Login } from './Login'
+import { Registration } from './Registration'
 
 export const AuthenticationPage = () => {
+  const [isLogin, setIsLogin] = useState<boolean>(true)
+
   return (
     <Stack
       backgroundColor="white"
@@ -16,7 +20,7 @@ export const AuthenticationPage = () => {
       <Stack padding="3rem 0 1.5rem 0" width="100%">
         <Stack width="50%">
           <Button
-            onClick={() => console.log('clicked login')}
+            onClick={() => setIsLogin(true)}
             borderRadius="30px"
             border="0 none white"
             fontSize="1.4rem"
@@ -28,7 +32,7 @@ export const AuthenticationPage = () => {
         </Stack>
         <Stack width="50%">
           <Button
-            onClick={() => console.log('clicked registrazione')}
+            onClick={() => setIsLogin(false)}
             borderRadius="30px"
             border="0 none white"
             fontSize="1.4rem"
@@ -40,7 +44,7 @@ export const AuthenticationPage = () => {
         </Stack>
       </Stack>
 
-      <Login />
+      {isLogin ? <Login /> : <Registration />}
     </Stack>
   )
 }
