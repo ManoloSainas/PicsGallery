@@ -1,7 +1,9 @@
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faEyeSlash, faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export const iconsSet = {
-  Heart: faHeart
+  Heart: faHeart,
+  Eye: faEye,
+  EyeSlash: faEyeSlash
   // AGGIUNGERE LE ALTRE ICONE
 }
 export type IconName = keyof typeof iconsSet

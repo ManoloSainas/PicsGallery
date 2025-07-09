@@ -3,6 +3,7 @@ import { Button } from '../../components/Button'
 import { Stack } from '../../components/Stack'
 import { Login } from './Login'
 import { Registration } from './Registration'
+import { Icon } from '../../components/Icon'
 
 export const AuthenticationPage = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true)
@@ -46,6 +47,8 @@ export const AuthenticationPage = () => {
         </Stack>
       </Stack>
       <Stack padding="2.5rem 0 1.5rem 0">{isLogin ? <Login /> : <Registration />}</Stack>
+      <Icon iconName="Eye" size="3x" />
+      <Icon iconName="EyeSlash" size="3x" />
     </Stack>
   )
 }
