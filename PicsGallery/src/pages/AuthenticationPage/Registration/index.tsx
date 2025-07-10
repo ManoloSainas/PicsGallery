@@ -17,10 +17,9 @@ export const Registration = () => {
       <Stack flexDirection="column" alignItems="center" width="100%" padding="4rem 0 0 0">
         <Button
           onClick={() => console.log('clicked')}
-          backgroundColor="#8bfa85"
           fontSize="1.8rem"
           borderRadius="20px"
-          border="0.1rem solid white"
+          border="0.2rem solid #0dff00c3"
         >
           Registrati
         </Button>
